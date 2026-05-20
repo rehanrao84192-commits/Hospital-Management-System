@@ -1,0 +1,25 @@
+<h1>👨‍🦱 Patients List</h1>
+
+<a href="/">🏠 Home</a>
+
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Contact</th>
+    <th>Address</th>
+</tr>
+
+{% for p in patients %}
+<tr>
+    <td>{{p[0]}}</td>
+    <td>{{p[1]}}</td>
+    <td>{{p[2]}}</td>
+    <td>{{p[3]}}</td>
+    <td>{{p[4]}}</td>
+    <td>{{p[5]}}</td>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,30 @@
+<h1>🏥 Hospital Management System</h1>
+
+<hr>
+
+<h2>➕ Add Patient</h2>
+<form action="/add_patient" method="POST">
+    <input name="name" placeholder="Name" required><br>
+    <input name="age" placeholder="Age" required><br>
+    <input name="gender" placeholder="Gender" required><br>
+    <input name="contact" placeholder="Contact" required><br>
+    <input name="address" placeholder="Address" required><br>
+    <button type="submit">Add Patient</button>
+</form>
+
+<hr>
+
+<h2>📅 Add Appointment</h2>
+<form action="/add_appointment" method="POST">
+    <input name="patient" placeholder="Patient Name" required><br>
+    <input name="doctor" placeholder="Doctor Name" required><br>
+    <input name="date" placeholder="Date" required><br>
+    <input name="time" placeholder="Time" required><br>
+    <button type="submit">Add Appointment</button>
+</form>
+
+<hr>
+
+<a href="/patients">👨‍🦱 View Patients</a><br>
+<a href="/doctors">👨‍⚕️ View Doctors</a><br>
+<a href="/appointments">📋 View Appointments</a>
