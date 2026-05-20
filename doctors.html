@@ -1,0 +1,17 @@
+<h1>👨‍⚕️ Doctors List</h1>
+
+<a href="/">🏠 Home</a>
+
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Doctor Name</th>
+</tr>
+
+{% for d in doctors %}
+<tr>
+    <td>{{d[0]}}</td>
+    <td>{{d[1]}}</td>
+</tr>
+{% endfor %}
+</table>
